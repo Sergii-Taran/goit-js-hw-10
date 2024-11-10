@@ -39,6 +39,7 @@
 }
 
 #datetime-picker:focus {
+  outline: none;
   border: 1px solid #4e75ff;
   color: #000;
 }
@@ -59,6 +60,7 @@ button {
   cursor: pointer;
   width: 75px;
   height: 40px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -96,4 +98,79 @@ button:disabled {
   display: block;
   font-size: 16px;
   color: #2e2f42;
+}
+
+/* snackbar */
+
+.form {
+  max-width: 360px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #2e2f42;
+}
+
+.form input[type='number'] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form input[type='number']:hover {
+  border: 1px solid #000;
+}
+
+.form input[type='number']:focus {
+  outline: none;
+  border: 1px solid #4e75ff;
+}
+
+.form fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+
+  transition: all 0.3s ease;
+
+  margin-bottom: 8px;
+}
+
+.form fieldset:hover {
+  border: 1px solid #000;
+}
+
+.form label input[type='radio'] {
+  margin-right: 8px;
+}
+
+.form button {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #6c8cff;
 }
